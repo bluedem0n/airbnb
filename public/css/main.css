@@ -1,0 +1,19 @@
+.cuadrado-azul {
+  border: 10px dashed #ccccff;
+  background: #0000ff;
+  width: 100px;
+  height: 100px; }
+
+.cuadrado-rojo {
+  border: 10px dashed #ffcccc;
+  background: #ff0000;
+  width: 100px;
+  height: 100px; }
+
+.cuadrado-verde {
+  border: 10px dashed #ccffcc;
+  background: #00ff00;
+  width: 100px;
+  height: 100px; }
+
+/*# sourceMappingURL=main.css.map */

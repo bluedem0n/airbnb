@@ -1,0 +1,7 @@
+@mixin crear_cuadrado($lado, $color){
+	display: block;
+	border: 1px dashed red;
+	background: $color;
+	width: $lado;
+	height: $lado;
+}
