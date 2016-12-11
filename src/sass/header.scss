@@ -1,0 +1,59 @@
+@import "variables";
+
+body{
+	font-family: $font-roboto;
+}
+
+nav{
+	background-color: $color-white;
+	box-shadow: none;
+	img{
+		padding: 2vh;
+	    width: 8vh;
+	    height: 8vh;
+	}
+}
+
+// Experiences - hero image
+.nav-wrapper
+	a{
+		color: black;
+	}
+
+.title{
+	padding: 6vh 0vh;
+
+	h3, h5{
+		color: $color-gray-letter;
+	}
+}	
+
+.hero{
+	background: url(https://a0.muscache.com/airbnb/static/engagement/p1/large/posters_sm.jpg);
+	background-position: bottom center;
+    background-size: 1600px auto;
+    background-repeat: repeat-x;
+    left: -60px;
+    height: 90vh;
+}
+
+.button1{
+	border-radius: 3vh;
+	border: $color-border solid;
+	width: 45vh;
+	padding: 1vh;
+}
+
+// buscador
+
+.formulario{
+	padding: 4vh 0vh;
+}
+
+.form{
+	border-radius: 1vh;
+	border: $color-border solid;
+	padding: 2vh;
+	margin-bottom: 0;
+}
+
