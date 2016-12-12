@@ -1,4 +1,4 @@
-		@import "variables";
+@import "variables";
 		.buttons {
 			.btn-fb {
 				width: 100%;
@@ -75,4 +75,11 @@
 			hr {
 				margin-top: 3em;
 			}
+			.btn-default{
+			    border: 1px solid $color-pink;
+			    border-radius:5px;
+			    color: $color-pink;
+			    padding: 7px 21px;
+			    font-size: 14px;
+			  }
 		}
