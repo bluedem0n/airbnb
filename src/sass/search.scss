@@ -1,0 +1,77 @@
+@import "variables";
+
+body{
+	font-family: $font-roboto;
+}
+.fechas,.type-room, .rango,.reserva-precios{
+	border-bottom: 1px solid #EDEFED;
+    padding: 0px;
+    
+}
+.form{
+	padding: 10px 0px 10px 0px;
+	margin-bottom:0px;
+
+	.caja-fecha input{
+	border:1px solid $color-gray-search;
+	border-radius:3px;
+    padding: 0px 0px 0px 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+	}
+}
+.type-room{
+
+}
+.type
+{
+	background-color:$color-gray-search;
+	border: 1px solid $color-gray-search;
+    padding: 8px;
+    border-radius: 5px;
+
+	label{
+		height:14px;
+	}
+}
+/*---lista de lugares ---*/
+.navbar-fixed{
+	padding-top:20px;
+	.bold{
+		font-weight: bold;
+	}
+	a{
+		background-color: white;
+    	color: black;
+    	border: 1px solid gray;
+	}
+}
+.card {
+	.card-image {
+		.card-title {
+			background-color:$color-gray;
+			bottom:35px;
+			opacity:0.8;
+		}
+	}	
+	.image-user{
+		    position: absolute;
+		    right: 15px;
+		    bottom: 80px;
+		    border: 2px solid white;
+	}
+	.card-content{
+		ul li{
+			display: inline-block;
+			.material-icons{
+				color: $color-green;
+			}
+		}	
+		.titulo{
+		color: #484848;
+	    font-weight: bold;
+		}
+	}
+	
+}
