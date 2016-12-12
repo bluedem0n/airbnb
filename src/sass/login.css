@@ -61,5 +61,11 @@
     display: inline-block; }
   .formulario hr {
     margin-top: 3em; }
+  .formulario .btn-default {
+    border: 1px solid #ff5a5f;
+    border-radius: 5px;
+    color: #ff5a5f;
+    padding: 7px 21px;
+    font-size: 14px; }
 
 /*# sourceMappingURL=login.css.map */
