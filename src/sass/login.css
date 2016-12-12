@@ -1,3 +1,11 @@
+.nav-wrapper .foto-perfil {
+  border-radius: 50%;
+  height: 100%;
+  width: 80%; }
+
+.ocultar {
+  display: none; }
+
 .buttons .btn-fb {
   width: 100%;
   height: 4em;

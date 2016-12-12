@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 	<!--Import Google Icon Font-->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,7 +12,6 @@
 	<link rel="stylesheet" href="sass/login.css">
 	<title>Airbnb</title>
 </head>
-
 <body>
 	<div class="hero">
 		<nav>
@@ -23,7 +21,8 @@
 					<li><a href="anfitrion.html">Conviértete en anfitrión</a></li>
 					<li><a href="">Ayuda</a></li>
 					<li><a href="">Regístrate</a></li>
-					<li><a class="waves-effect" href="#modal1">Iniciar Sesión</a></li>
+					<li><a id="btn-iniciar" class="waves-effect iniciar" href="#modal1">Iniciar Sesión</a></li>
+					<li><a id="foto" href="javascript:void(0)"></a></li>
 				</ul>
 			</div>
 		</nav>
@@ -37,7 +36,7 @@
 	</div>
 	<div id="modal1" class="modal">
 		<div class="modal-content">
-			<div class="buttons"> <a class="btn-fb waves-effect waves-light btn">Iniciar sesión con Facebook
+			<div class="buttons"> <a id="facebook" class="btn-fb waves-effect waves-light btn">Iniciar sesión con Facebook
 			<img src="/assets/img/fb.png" alt="" class="logo-fb">
 			</a> <a class="btn-google waves-effect waves-light btn">Iniciar sesión con Google
 			<img src="/assets/img/google.png" alt="" class="logo-google">
@@ -124,6 +123,7 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="/assets/js/fb.js"></script>
 </body>
 
 </html>
