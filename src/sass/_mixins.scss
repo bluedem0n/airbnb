@@ -5,3 +5,8 @@
 	width: $lado;
 	height: $lado;
 }
+
+@mixin margin($top, $bottom){
+	margin-top: $top;
+	margin-bottom: $bottom;
+}
