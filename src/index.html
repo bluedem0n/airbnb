@@ -7,49 +7,67 @@
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="icon" href="../assets/img/favicon.png" type="image/x-icon"/>
+		<link rel="icon" href="/assets/img/favicon.png" type="image/x-icon"/>
+		<link rel="stylesheet" href="/assets/style.css">
 		<link rel="stylesheet" href="sass/main.css">
 		<title>Airbnb</title>
 	</head>
 	<body>
 		<div class="hero">
 			<nav>
-			    <div class="nav-wrapper">
-			      <a href="#" class="brand-logo"><img src="../assets/img/favicon.png"></a>
-			      <ul id="nav-mobile" class="right hide-on-med-and-down">
-			        <li><a href="anfitrion.html">Conviértete en anfitrión</a></li>
-			        <li><a href="">Ayuda</a></li>
-			        <li><a href="">Regístrate</a></li>
-			        <li><a href="">Iniciar Sesión</a></li>
-			      </ul>
+			    <div class="nav-wrapper hide-on-large-only">
+			    	<a class="button-collapse" data-activates="slide-out" href='#'><img src="/assets/img/favicon.png"></a>
+					<ul id="slide-out" class="side-nav" class="right">
+						<li><a href="index.html"><img src="/assets/img/favicon.png"></a></li>
+					    <li><a href="index.html">Inicio</a></li>
+					    <li><div class="divider"></div></li>
+					    <li><a href="#!">Descargar la aplicación</a></li>
+					    <li><a href="anfitrion.html">Conviértete en anfitrión</a></li>
+					    <li><a href="#!">Regístrate</a></li>
+					    <li><a href="#!">Iniciar Sesión</a></li>
+					    <li><div class="divider"></div></li>
+					    <li><a href="#!">Ayuda</a></li>
+					  </ul>
+				</div>
+				<div class="nav-wrapper hide-on-small-only">
+					<a class="brand-logo hide-on-med-and-down" href='#'><img src="/assets/img/favicon.png"></a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="anfitrion.html">Conviértete en anfitrión</a></li>
+						<li><a href="">Ayuda</a></li>
+						<li><a href="">Regístrate</a></li>
+						<li><a href="">Iniciar Sesión</a></li>
+					</ul>
 			    </div>
 		  	</nav>
 		  	<div class="container">
-		  		<div class="title left-align">
-			  		<h3><b>Te espera un mundo de viajes inolvidables.</b></h3>
-			  		<h5>Alojamientos, experiencias y lugares, todo en una sola aplicación.</h5>
-			  		<div class="button1 center"><span>Descubre las últimas novedades</span></div>
+		  		<div class="title">
+			  		<h3 class="hide-on-small-only left-align"><b>Te espera un mundo de viajes inolvidables.</b></h3>
+			  		<h5 class="hide-on-med-and-down">Alojamientos, experiencias y lugares, todo en una sola aplicación.</h5>
+			  		<div class="button1 center hide-on-small-only"><span>Descubre las últimas novedades</span></div>
+			  		<h5 class="hide-on-med-and-up center-align"><b>Te espera un mundo de viajes inolvidables.</b></h5>
+			  		<p class="hide-on-med-and-up center-align">Descubre las última novedades</p>
+			  		
 			  	</div>
 		  	</div>		  	
 		</div>
-		<section class="formulario">
+		<section class="formulario ">
 			<div class="container">
-				<div class="row form">
-					<div class="col l4">
+				<div class="row form hide-on-small-only">
+					<div class="col m3 l3">
 						<div class="input-field">
 				          <input placeholder="Destino, ciudad, dirección" id="first_name" type="text" class="validate">
 				          <label for="first_name">Dónde</label>
 				        </div>
 					</div>
-					<div class="col l2">
+					<div class="col m2 l2">
 						<label for="first_name">Llegada</label>
 						<input type="date" class="datepicker">
 					</div>
-					<div class="col l2">
+					<div class="col m2 l2">
 						<label for="first_name">Salida</label>
 						<input type="date" class="datepicker">
 					</div>
-					<div class="col l4">
+					<div class="col m3 l3">
 					 	<label for="first_name">Huéspedes</label>
 						<select class="browser-default">
 						    <option value="" disabled selected>1 huésped</option>
@@ -58,31 +76,116 @@
 						    <option value="3">4 huéspedes</option>
 						</select>
 					</div>
+					<div class="col m2 l2">
+						<div class="btn-buscar hide-on-large-only">
+							<a class="waves-effect waves-light btn red lighten-1"><span class="icon-search2"></span></a>
+						</div>
+						<div class="btn-buscar hide-on-med-only">
+							<a class="waves-effect waves-light btn red lighten-1">Buscar</a>
+						</div>
+					</div>
+				</div>
+				<div class="row form hide-on-med-and-up">
+					<div class="col s10">
+						<div class="input-field">
+			          		<input placeholder="Buscar" id="first_name" type="text" class="validate">
+			        	</div>
+					</div>
+					<div class="col s2 search">
+						<span class="icon-search"></span>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="experiencias">
 			<div class="container">
 				<h5>Experiencias</h5>
-				<div class="row">
-					<div class="col l3">
-						<div class="foto1"></div>
+				<div class="row cajafotos">
+					<div class="col s12 m6 l3">
+						<img src="/assets/img/foto1.jpg" class="responsive-img">
+						<p><b>S/.422</b> Olympic training</p>
 					</div>
-					<div class="col l3">
-						<div class="foto2"></div>
+					<div class="col m6 l3 hide-on-small-only">
+						<img src="/assets/img/foto2.jpg" class="responsive-img">
+						<p><b>S/.839</b> Grime & clubbing</p>
 					</div>
-					<div class="col l3">
-						<div class="foto3"></div>
+					<div class="col l3 hide-on-med-and-down">
+						<img src="/assets/img/foto3.jpg" class="responsive-img">
+						<p><b>S/.597</b> Outdoor experience</p>
 					</div>
-					<div class="col l3">
-						<div class="foto4"></div>
+					<div class="col l3 hide-on-med-and-down">
+						<img src="/assets/img/foto4.jpg" class="responsive-img">
+						<p><b>S/.1141</b> Cocktails & foraging</p>
 					</div>
 				</div>
 			</div>
 		</section>	
+		<div class="divider"></div>
+		<section class="footer">
+			<div class="container">
+				<div class="row footer1">
+					<div class="col s12 m3 l3">
+						<select class="browser-default">
+						    <option value="" disabled selected>Español</option>
+						    <option value="1">Idioma2</option>
+						    <option value="2">Idioma3</option>
+						    <option value="3">Idioma4</option>
+						</select>
+						<select class="browser-default">
+						    <option value="" disabled selected>PEN</option>
+						    <option value="1">Moneda1</option>
+						    <option value="2">Moneda2</option>
+						    <option value="3">Moneda3</option>
+						</select>
+					</div>
+					<div class="col m3 l3 hide-on-small-only">
+						<p><b>Airbnb</b></p>
+						<ul>
+							<li>Acerca de</li>
+							<li>Empleo</li>
+							<li>Prensa</li>
+							<li>Políticas</li>
+							<li>Ayuda</li>
+						</ul>
+					</div>
+					<div class="col m3 l3 hide-on-small-only">
+						<p><b>Descubre Airbnb</b></p>
+						<ul>
+							<li>Confianza y seguridad</li>
+							<li>Crédito para viajar</li>
+							<li>Airbnb Action</li>
+							<li>Viajes de negocios</li>
+							<li>Guías</li>
+						</ul>
+					</div>
+					<div class="col m3 l3 hide-on-small-only">
+						<p><b>Hospedar</b></p>
+						<ul>
+							<li>Razones para hospedar</li>
+							<li>Hospitalidad</li>
+							<li>Ser un anfitrión responsable</li>
+						</ul>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="row footer2">
+					<div class="col s6 m6 l6">
+						<img src="/assets/img/afooter.png" width="30px">
+						<span>© Airbnb, Inc.</span>
+					</div>
+					<div class="col s6 m6 l6 right-align">
+						<span>Términos y Privacidad</span> 
+						<span class="hide-on-small-only">Mapa del sitio</span>
+						<span class="hide-on-med-and-down icon-facebook"></span>
+						<span class="hide-on-med-and-down icon-twitter"></span>
+						<span class="hide-on-med-and-down icon-instagram"></span>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!--Import jQuery before materialize.js-->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
-		<script type="text/javascript" src="../js/main.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

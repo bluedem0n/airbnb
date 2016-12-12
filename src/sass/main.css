@@ -3,7 +3,9 @@ body {
 
 nav {
   background-color: #FFFFFF;
-  box-shadow: none; }
+  box-shadow: none;
+  position: fixed;
+  z-index: 100; }
   nav img {
     padding: 2vh;
     width: 8vh;
@@ -14,7 +16,7 @@ a {
   color: black; }
 
 .title {
-  padding: 6vh 0vh; }
+  padding: 13vh 0vh; }
   .title h3, .title h5 {
     color: #484848; }
 
@@ -38,7 +40,29 @@ a {
 .form {
   border-radius: 1vh;
   border: #E9EBEB solid;
-  padding: 2vh;
-  margin-bottom: 0; }
+  padding: 1vh;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 0; }
+
+.btn-buscar {
+  padding-top: 4vh; }
+
+.search {
+  font-size: 2rem;
+  padding-top: 4vh !important; }
+
+.footer1, .footer2 {
+  padding: 5vh 0vh; }
+  .footer1 img, .footer2 img {
+    vertical-align: middle; }
+  .footer1 span, .footer2 span {
+    padding-left: 2vh; }
+
+.browser-default {
+  margin-bottom: 4vh; }
+
+#sidenav-overlay {
+  background-color: transparent; }
 
 /*# sourceMappingURL=main.css.map */
