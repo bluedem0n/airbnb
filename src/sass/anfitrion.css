@@ -1,0 +1,49 @@
+nav {
+  background-color: transparent;
+  position: absolute; }
+  nav .logo {
+    padding: 2vh;
+    width: 8vh;
+    height: 8vh; }
+
+#anfitrion {
+  color: #484848;
+  font-size: 18px;
+  font-weight: 300; }
+  #anfitrion h4 {
+    font-weight: 600;
+    margin-top: 10%;
+    margin-bottom: 5%; }
+  #anfitrion h5 {
+    font-weight: 600;
+    font-size: 24px; }
+  #anfitrion .card {
+    cursor: pointer; }
+  #anfitrion .why-host {
+    font-weight: 600;
+    font-size: 22px; }
+
+.container {
+  width: 83% !important; }
+
+.img-anf {
+  background-image: url(../img/img-anf.png);
+  background-size: cover;
+  background-position: center, center;
+  height: 79vh; }
+
+.form-host {
+  color: #00a699;
+  font-weight: 500; }
+  .form-host:hover {
+    text-decoration: underline; }
+
+.img-anf-mob {
+  background-image: url(../img/img-anf-mob.png);
+  background-size: cover;
+  background-position: 100%;
+  height: 100vh; }
+  .img-anf-mob p {
+    line-height: 25px; }
+
+/*# sourceMappingURL=anfitrion.css.map */

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+		<!--Let browser know website is optimized for mobile-->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="icon" href="/assets/img/favicon.png" type="image/x-icon"/>
+		<link rel="stylesheet" href="/assets/style.css">
+		<link rel="stylesheet" href="sass/main.css">
+		<link rel="stylesheet" href="sass/search.css">
+		<title>Búsqueda en Airbnb</title>
+	</head>
+	<body>
+		<nav>
+		    <div class="nav-wrapper hide-on-large-only">
+		    	<a class="button-collapse" data-activates="slide-out" href='#'><img src="/assets/img/favicon.png"></a>
+				<ul id="slide-out" class="side-nav" class="right">
+					<li><a href="index.html"><img src="/assets/img/favicon.png"></a></li>
+				    <li><a href="index.html">Inicio</a></li>
+				    <li><div class="divider"></div></li>
+				    <li><a href="#!">Descargar la aplicación</a></li>
+				    <li><a href="anfitrion.html">Conviértete en anfitrión</a></li>
+				    <li><a href="#!">Regístrate</a></li>
+				    <li><a href="#!">Iniciar Sesión</a></li>
+				    <li><div class="divider"></div></li>
+				    <li><a href="#!">Ayuda</a></li>
+				  </ul>
+			</div>
+			<div class="nav-wrapper hide-on-small-only">
+				<a class="brand-logo hide-on-med-and-down" href='index.html'><img src="/assets/img/favicon.png"></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="anfitrion.html">Conviértete en anfitrión</a></li>
+					<li><a href="">Ayuda</a></li>
+					<li><a href="">Regístrate</a></li>
+					<li><a href="">Iniciar Sesión</a></li>
+				</ul>
+		    </div>
+		    <div class="divider"></div>
+	  	</nav>
+
+		<section class="search-section">
+			<div class="row">
+				<div class="col s12 m7 l7"> 
+					<div class="fechas">
+						<div class="row formu">
+							<div class="col l2">
+								<div class="">
+						        	<p>Fechas</p> 
+						        </div>
+							</div>
+							<div class="col l3">
+								<div class="caja-fecha">
+									<label for="first_name"></label>
+									<input type="date" class="datepicker">
+								</div>
+							</div>
+							<div class="col l3">
+								<div class="caja-fecha">
+									<label for="first_name"></label>
+									<input type="date" class="datepicker">
+								</div>
+							</div>
+							<div class="col l3">
+							 	<div class="caja-fecha">
+							 		<label for="first_name"></label>
+									<select class="browser-default">
+									    <option value="" disabled selected>1 huésped</option>
+									    <option value="1">2 huéspedes</option>
+									    <option value="2">3 huéspedes</option>
+									    <option value="3">4 huéspedes</option>
+									</select>
+							 	</div>
+							</div>
+						</div>
+					</div>
+					<div class="type-room">
+						<div class="row formu">
+							<div class="col l2">
+								<div class="">
+						        	<p>Tipo de habitacion</p> 
+						        </div>
+							</div>
+							<div class="col l3">
+								<div class="row type">
+									<div class="col l9">
+										Casa entera
+									</div>
+									<div class="col l3">
+										<input type="checkbox" class="filled-in" id="filled-in-box"/>
+	     								<label for="filled-in-box"></label>
+									</div>
+							    </div>
+							</div>
+							<div class="col l3">
+								<div class="row type">
+								   <div class="col l9">
+								   	Habitacion privada 
+								   </div> 
+								   <div class="col l3">
+							       		<input type="checkbox" class="filled-in" id="filled-in-box1"/>
+							       		<label for="filled-in-box1"></label>
+								   </div>
+							    </div>
+							</div>
+							<div class="col l3">
+							 	<div class=" row type">
+							      	<div class="col l9">
+							      		Habitacion compartida
+							      	</div>
+							      	<div class="col l3">
+							      		<input type="checkbox" class="filled-in" id="filled-in-box2"/>
+								    	<label for="filled-in-box2"></label>
+							      	</div>
+							    </div>
+							</div>
+						</div>
+					</div>
+					<div class="rango">
+						<div class="row formu">
+							<div class="col l2">
+								<div class="">
+						        	<p>Rango de precios</p> 
+						        </div>
+							</div>
+							<div class="col l10">
+								<form action="#">
+								    <p class="range-field">
+								      <input type="range" id="test5" min="0" max="100" />
+								    </p>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="reserva-precios">
+						<div class="row formu">
+							<div class="col l2">
+								<div class="">
+						        	<p>Reserva inmediata</p> 
+						        </div>
+							</div>
+							<div class="col l7">
+								<p>Anuncios que no requieren que el anfitrión acepte la solicitud.</p>
+							</div>
+							<div class=" col l2">
+							   	<div class=" switch">
+								    <label>
+								      Off
+								      <input type="checkbox">
+								      <span class="lever"></span>
+								      On
+								    </label>
+							    </div>
+							</div>
+						</div>
+					</div>
+					<div class="navbar-fixed">
+						<div class="col 12">
+							<a class="waves-effect waves-light btn">Filtros</a>
+						</div>
+					</div>
+				</div>
+				<div class="col m5 l5"> 
+					<div class="Mapa"></div>
+				</div>
+			</div>
+		</section>
+		<!--Import jQuery before materialize.js-->
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
