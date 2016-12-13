@@ -1,0 +1,39 @@
+.nav-profile {
+  background-color: #767676; }
+
+.panel-control-none {
+  display: none; }
+
+@media screen and (max-width: 320px) {
+  .panel-control-none {
+    display: block;
+    margin-top: -3px; } }
+.nav-text-profile {
+  padding-left: 200px; }
+  .nav-text-profile:hover {
+    text-decoration: underline;
+    font-weight: bold; }
+
+.text-welcome-profile {
+  background-color: #EDEFED;
+  border: 1px solid #E9EBEB;
+  padding: 15px;
+  margin-bottom: 0px; }
+
+.text-profile {
+  border: 1px solid #E9EBEB;
+  padding: 15px; }
+
+.img-profile {
+  margin-top: 14px;
+  border: 1px solid #E9EBEB; }
+
+.name-profile {
+  font-size: 22px;
+  font-weight: bold; }
+
+.btn-profile {
+  margin-bottom: 16px;
+  background-color: #FF5A5F; }
+
+/*# sourceMappingURL=perfil.css.map */
