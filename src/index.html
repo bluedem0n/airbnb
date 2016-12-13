@@ -83,9 +83,9 @@
 				<a href="#modal3" class="btn-login waves-effect waves-light btn"><i class="left material-icons prefix">mail_outline</i>Regristrarse con una dirección de correo</a>
 				<br>
 				<div>
-			    <small>
+			    <p>
 			      Al regristrarme, acepto las <a href="/terms?source=tos" target="_blank">Condiciones del servicio</a>, la <a href="/terms/nondiscrimination_policy?source=tos" target="_blank">Política contra la discriminación</a>, las <a href="/terms/payments_terms?source=tos" target="_blank">Condiciones sobre pagos</a>, la <a href="/terms/privacy_policy?source=tos" target="_blank">Politica de Privacidad y de Cookies</a>, la <a href="/terms/guest_refund_policy?source=tos" target="_blank">Política de reembolso al huésped</a>, y las <a href="/terms/host_guarantee?source=tos" target="_blank">Condiciones de la Garantía al anfitrión</a> de Airbnb.
-			    </small>
+			    </p>
 			  </div>
 				<hr> 
 				<a href="#">¿Ya tienes una cuenta de Airbnb?</a>
@@ -98,35 +98,42 @@
 			<div class="center-align social-links">
 		    Regístrate con <a href="#">Facebook</a> o <a href="#">Google</a>
 		  </div>
-			<div class="signup-or-separator"> <span class="text">o</span>
+			<div class="signup-or-separator">
+				<span class="text">o</span>
 				<hr>
 			</div>
 			<div class="row">
-				<form class="col s12" action="">
+				<form class="col s12 formulario2" id="form2">
+					<input type="email" name="email2" placeholder="Dirección de correo electrónico" class="col s10">
+					<i class="material-icons col s2">mail_outline</i>
+					<input type="text" name="name" placeholder="Nombre" class="col s10">
+					<i class="material-icons col s2">perm_identity</i>
+					<input type="text" name="lastname" placeholder="Apellido" class="col s10">
+					<i class="material-icons col s2">perm_identity</i>
+					<input type="text" name="password2" placeholder="Contraseña" class="col s10">
+					<i class="material-icons col s2">lock_outline</i>
+					<br>
+					<p>Fecha de Nacimiento <i class="tiny material-icons">help</i></p>
 					<div class="row">
-						<div class="input-field col s12"> <i class="material-icons prefix">mail_outline</i>
-							<label for="icon_prefix">dirección de correo electrónico</label>
-							<input id="icon_prefix" type="email" class="validate" required="required">
-						</div>
-						<div class="input-field col s12"> <i class="material-icons prefix">lock</i>
-							<input id="icon_telephone" type="password" class="validate" required="required">
-							<label for="icon_telephone">Contraseña</label>
-						</div>
+					<input type="number" class="col s3" name="month" placeholder="Mes">
+					<input type="number" class="col s3" name="day" placeholder="Día">
+					<input type="number" class="col s3" name="year" placeholder="Año">
 					</div>
-				</form>
-				<div class="row formulario">
-					<div class="col s6">
-						<input type="checkbox" id="recordarme" />
-						<label for="recordarme">Recordarme</label>
+					<br>
+					<input type="checkbox" name="checkbox" id="deacuerdo"/>
+					<label for="deacuerdo">Me gustaría recibir cupones, promociones, encuestas y actualizaciones por correo electrónico sobre Airbnb y sus socios.</label>
+					<br>
+					<div>
+						    <p>
+						      Al regristrarme, acepto las <a href="/terms?source=tos" target="_blank">Condiciones del servicio</a>, la <a href="/terms/nondiscrimination_policy?source=tos" target="_blank">Política contra la discriminación</a>, las <a href="/terms/payments_terms?source=tos" target="_blank">Condiciones sobre pagos</a>, la <a href="/terms/privacy_policy?source=tos" target="_blank">Politica de Privacidad y de Cookies</a>, la <a href="/terms/guest_refund_policy?source=tos" target="_blank">Política de reembolso al huésped</a>, y las <a href="/terms/host_guarantee?source=tos" target="_blank">Condiciones de la Garantía al anfitrión</a> de Airbnb.
+						    </p>
 					</div>
-					<div class="col s6"> 
-					<a href="#">Haz olvidado tu contraseña?</a>
-					</div> 
 					<a class="btn-login waves-effect waves-light btn">Iniciar Sesión</a>
+					<br>
 					<hr> 
-					<a href="#">¿No tienes cuenta?</a>
-					<a href="#" class="right modal-action modal-close btn-default waves-effect waves-light" type="submit" name="action">Regístrate</a>
-				</div>
+					<a href="#">¿Ya tienes una cuenta de Airbnb?</a>
+					<a href="#" class="right modal-action modal-close btn-default waves-effect waves-light" type="submit" name="action">Iniciar sesión</a>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -181,6 +188,7 @@
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/validation.js"></script>
+	<script type="text/javascript" src="js/validation2.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

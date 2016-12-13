@@ -42,7 +42,8 @@
 .modal {
   width: 40%;
   overflow: initial;
-  max-height: 85%; }
+  overflow-y: auto;
+  max-height: 100%; }
   .modal .modal-footer {
     margin-top: -2em; }
 
@@ -62,6 +63,29 @@
   .formulario hr {
     margin-top: 3em; }
   .formulario .btn-default {
+    border: 1px solid #ff5a5f;
+    border-radius: 5px;
+    color: #ff5a5f;
+    padding: 7px 21px;
+    font-size: 14px; }
+
+.formulario2 {
+  word-break: word-break;
+  margin-bottom: 0; }
+  .formulario2 .btn-login {
+    width: 100%;
+    height: 3.5em;
+    display: block;
+    border-radius: 5px;
+    padding-top: 8px;
+    background-color: #FF5A5F;
+    text-transform: none;
+    top: 1em; }
+  .formulario2 p {
+    display: inline-block; }
+  .formulario2 hr {
+    margin-top: 3em; }
+  .formulario2 .btn-default {
     border: 1px solid #ff5a5f;
     border-radius: 5px;
     color: #ff5a5f;
