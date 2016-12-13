@@ -12,7 +12,8 @@
 		<link rel="icon" href="/assets/img/favicon.png" type="image/x-icon"/>
 		<link rel="stylesheet" href="/assets/style.css">
 		<link rel="stylesheet" href="sass/main.css">
-		<title>Airbnb</title>
+		<link rel="stylesheet" href="sass/search.css">
+		<title>Búsqueda en Airbnb</title>
 	</head>
 	<body>
 		<nav>
@@ -31,7 +32,7 @@
 				  </ul>
 			</div>
 			<div class="nav-wrapper hide-on-small-only">
-				<a class="brand-logo hide-on-med-and-down" href='#'><img src="/assets/img/favicon.png"></a>
+				<a class="brand-logo hide-on-med-and-down" href='index.html'><img src="/assets/img/favicon.png"></a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					<li><a href="anfitrion.html">Conviértete en anfitrión</a></li>
 					<li><a href="">Ayuda</a></li>
@@ -39,12 +40,14 @@
 					<li><a href="">Iniciar Sesión</a></li>
 				</ul>
 		    </div>
+		    <div class="divider"></div>
 	  	</nav>
+
 		<section class="search-section">
 			<div class="row">
-				<div class="col s12 m8 l8"> 
+				<div class="col s12 m7 l7"> 
 					<div class="fechas">
-						<div class="row form">
+						<div class="row formu">
 							<div class="col l2">
 								<div class="">
 						        	<p>Fechas</p> 
@@ -76,19 +79,19 @@
 						</div>
 					</div>
 					<div class="type-room">
-						<div class="row form">
+						<div class="row formu">
 							<div class="col l2">
 								<div class="">
 						        	<p>Tipo de habitacion</p> 
 						        </div>
 							</div>
 							<div class="col l3">
-								<div class=" row type">
+								<div class="row type">
 									<div class="col l9">
 										Casa entera
 									</div>
 									<div class="col l3">
-										<input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+										<input type="checkbox" class="filled-in" id="filled-in-box"/>
 	     								<label for="filled-in-box"></label>
 									</div>
 							    </div>
@@ -99,7 +102,7 @@
 								   	Habitacion privada 
 								   </div> 
 								   <div class="col l3">
-							       		<input type="checkbox" class="filled-in" id="filled-in-box1" checked="checked" />
+							       		<input type="checkbox" class="filled-in" id="filled-in-box1"/>
 							       		<label for="filled-in-box1"></label>
 								   </div>
 							    </div>
@@ -110,7 +113,7 @@
 							      		Habitacion compartida
 							      	</div>
 							      	<div class="col l3">
-							      		<input type="checkbox" class="filled-in" id="filled-in-box2" checked="checked" />
+							      		<input type="checkbox" class="filled-in" id="filled-in-box2"/>
 								    	<label for="filled-in-box2"></label>
 							      	</div>
 							    </div>
@@ -118,7 +121,7 @@
 						</div>
 					</div>
 					<div class="rango">
-						<div class="row form">
+						<div class="row formu">
 							<div class="col l2">
 								<div class="">
 						        	<p>Rango de precios</p> 
@@ -134,7 +137,7 @@
 						</div>
 					</div>
 					<div class="reserva-precios">
-						<div class="row form">
+						<div class="row formu">
 							<div class="col l2">
 								<div class="">
 						        	<p>Reserva inmediata</p> 
@@ -158,151 +161,10 @@
 					<div class="navbar-fixed">
 						<div class="col 12">
 							<a class="waves-effect waves-light btn">Filtros</a>
-							<!-- <p class="right-align bold">Tu viaje comienza dentro de 3 dias</p>
-							<p>Utiliza el filtro de Reserva inmediata para encontrar alojamientos que puedas reservar al momento.Pueden aplicarse tarifas e impuestos adicionales.</p> -->
 						</div>
 					</div>
-					<!-- <div class="lista-lugares">
-						<div class="row">
-							<div class="col s12 m6 l6">
-								<div class="card">
-						            <div class="card-image">
-						              <img src="../assets/img/img-2.jpg">
-						              <span class=" card-title precio">s/. 241</span>
-						            </div>
-						            <div class="col s2">
-											<img src="../assets/img/user-1.jpg" alt="" class="circle responsive-img image-user">
-									</div>
-						            <div class="card-content">
-						              <p><a class="titulo" href="#">Modern & New Apartment</a></p>
-						              <ul>
-						              	<li>Casa/apto.entero</li>
-						              	<li>*4 huespedes</li>
-						              	<li>*2 evaluaciones</li>
-						              </ul>
-						            </div>
-						        </div>
-							</div>
-							<div class="col s12 m6 l6">
-								<div class="card">
-						            <div class="card-image">
-						              	<img src="../assets/img/img-1.jpg">
-						              	<span class=" card-title precio">s/. 242</span>
-						            </div>
-						            <div class="col s2">
-										<img src="../assets/img/user-1.jpg" alt="" class="circle responsive-img image-user">
-									</div>
-						            <div class="card-content">
-						              <p><a class="titulo" href="#">Modern & New Apartment</a></p>
-						              <ul>
-						              	<li>Casa/apto.entero</li>
-						              	<li>*4 huespedes</li>
-						              	<li>*<i class="tiny material-icons">star</i>
-											<i class="tiny material-icons">star</i>
-											<i class="tiny material-icons">star</i>
-											<i class="tiny material-icons">star</i>
-						              	</li>
-						              	<li>*42</li>
-						              </ul>
-						            </div>
-						        </div>
-							</div>
-						</div>					
-						<div class="row">
-							<div class="col s12 m6 l6">
-								<div class="card">
-						            <div class="card-image">
-						              <img src="../assets/img/img-2.jpg">
-						              <span class=" card-title precio">s/. 241</span>
-						            </div>
-						            <div class="col s2">
-											<img src="../assets/img/user-1.jpg" alt="" class="circle responsive-img image-user">
-									</div>
-						            <div class="card-content">
-						              <p><a class="titulo" href="#">Modern & New Apartment</a></p>
-						              <ul>
-						              	<li>Casa/apto.entero</li>
-						              	<li>*4 huespedes</li>
-						              	<li>*2 evaluaciones</li>
-						              </ul>
-						            </div>
-						        </div>
-							</div>
-							<div class="col s12 m6 l6">
-								<div class="card">
-						            <div class="card-image">
-						              <img src="../assets/img/img-1.jpg">
-						              <span class=" card-title precio">s/. 242</span>
-						            </div>
-						            <div class="col s2">
-										<img src="../assets/img/user-1.jpg" alt="" class="circle responsive-img image-user">
-									</div>
-						            <div class="card-content">
-						              	<p><a class="titulo" href="#">Modern & New Apartment</a></p>
-						              	<ul>
-							              	<li>Casa/apto.entero</li>
-							              	<li>*4 huespedes</li>
-							              	<li>*<i class="tiny material-icons">star</i>
-												<i class="tiny material-icons">star</i>
-												<i class="tiny material-icons">star</i>
-												<i class="tiny material-icons">star</i>
-							              	</li>
-							              	<li>*42</li>
-						              	</ul>
-						            </div>
-						        </div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col s12 m6 l6">
-								<div class="card">
-						            <div class="card-image">
-						              <img src="../assets/img/img-2.jpg">
-						              <span class=" card-title precio">s/. 241</span>
-						            </div>
-						            <div class="col s2">
-											<img src="../assets/img/user-1.jpg" alt="" class="circle responsive-img image-user">
-									</div>
-						            <div class="card-content">
-						              <p><a class="titulo" href="#">Modern & New Apartment</a></p>
-						              <ul>
-						              	<li>Casa/apto.entero</li>
-						              	<li>*4 huespedes</li>
-						              	<li>*2 evaluaciones</li>
-						              </ul>
-						            </div>
-						       
-						          </div>
-							</div>
-							<div class="col s12 m6 l6">
-								<div class="card">
-						            <div class="card-image">
-						              <img src="../assets/img/img-1.jpg">
-						              <span class=" card-title precio">s/. 242</span>
-						            </div>
-						            <div class="col s2">
-										<img src="../assets/img/user-1.jpg" alt="" class="circle responsive-img image-user">
-									</div>
-						            <div class="card-content">
-						              <p><a class="titulo" href="#">Modern & New Apartment</a></p>
-						              <ul>
-						              	<li>Casa/apto.entero</li>
-						              	<li>*4 huespedes</li>
-						              	
-						              	<li>*<i class="tiny material-icons">star</i>
-											<i class="tiny material-icons">star</i>
-											<i class="tiny material-icons">star</i>
-											<i class="tiny material-icons">star</i>
-						              	</li>
-						              	<li>*42</li>
-						              </ul>
-						            </div>
-						        </div>
-							</div>
-						</div>
-					</div> -->
 				</div>
-				<div class="col m4 l4"> 
+				<div class="col m5 l5"> 
 					<div class="Mapa"></div>
 				</div>
 			</div>

@@ -8,18 +8,18 @@ body{
     padding: 0px;
     
 }
-.form{
+.formu{
 	padding: 10px 0px 10px 0px;
 	margin-bottom:0px;
 
-	.caja-fecha input{
-	border:1px solid $color-gray-search;
-	border-radius:3px;
-    padding: 0px 0px 0px 8px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0px;
-	}
+	// .caja-fecha input{
+	// border:1px solid $color-gray-search;
+	// border-radius:3px;
+ //    padding: 0px 0px 0px 8px;
+ //    width: 100%;
+ //    box-sizing: border-box;
+ //    margin: 0px;
+	// }
 }
 .type-room{
 
@@ -74,4 +74,8 @@ body{
 		}
 	}
 	
+}
+.search-section{
+	position: relative;
+	top:10vh;
 }
