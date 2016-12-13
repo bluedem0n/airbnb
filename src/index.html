@@ -3,6 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="google-signin-client_id" content="646052577379-2odrtsh84auvjb1h93oceiqf5c612plr.apps.googleusercontent.com">
+	<script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
 	<!--Import Google Icon Font-->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Import materialize.css-->
@@ -17,7 +19,6 @@
 	<link rel="stylesheet" href="css/login.css">
 	<title>Airbnb</title>
 </head>
-
 <body>
 	<div class="hero">
 		<nav>
@@ -67,9 +68,11 @@
 		<div class="modal-content">
 			<div class="buttons"> <a id="facebook" class="btn-fb waves-effect waves-light btn">Iniciar sesión con Facebook
 			<img src="/assets/img/fb.png" alt="" class="logo-fb">
-			</a> <a class="btn-google waves-effect waves-light btn">Iniciar sesión con Google
-			<img src="/assets/img/google.png" alt="" class="logo-google">
-			</a> </div>
+			</a>
+			<a id="gm"  href="#" class="btn-google waves-effect waves-light btn">Iniciar sesión con Google
+				<img src="/assets/img/google.png" alt="" class="logo-google">
+			</a> 
+			</div>
 			<div class="signup-or-separator"> <span class="text">o</span>
 				<hr> </div>
 			<div class="row">
@@ -95,12 +98,12 @@
 		<div class="modal-content">
 			<div class="buttons"> <a class="btn-fb waves-effect waves-light btn">Regristrarse con Facebook
 			<img src="/assets/img/fb.png" alt="" class="logo-fb">
-			</a> <a class="btn-google waves-effect waves-light btn">Registrarse con Google
+			</a> <a id="gm" class="btn-google waves-effect waves-light btn">Registrarse con Google
 			<img src="/assets/img/google.png" alt="" class="logo-google">
 			</a> </div>
 			<div class="signup-or-separator"> <span class="text">o</span>
 				<hr> </div>
-			<div class="formulario"> <a href="#modal3" class="btn-login waves-effect waves-light btn"><i class="left material-icons prefix">mail_outline</i>Regristrarse con una dirección de correo</a>
+			<div class="formulario"> <a href="#modal3" class="btn-login waves-effect waves-light btn"><i class="left material-icons prefix">mail_outline</i>Registrarse con una dirección de correo</a>
 				<br>
 				<div> <small>
 			      Al regristrarme, acepto las <a href="/terms?source=tos" target="_blank">Condiciones del servicio</a>, la <a href="/terms/nondiscrimination_policy?source=tos" target="_blank">Política contra la discriminación</a>, las <a href="/terms/payments_terms?source=tos" target="_blank">Condiciones sobre pagos</a>, la <a href="/terms/privacy_policy?source=tos" target="_blank">Politica de Privacidad y de Cookies</a>, la <a href="/terms/guest_refund_policy?source=tos" target="_blank">Política de reembolso al huésped</a>, y las <a href="/terms/host_guarantee?source=tos" target="_blank">Condiciones de la Garantía al anfitrión</a> de Airbnb.
@@ -250,9 +253,11 @@
 	<script src="/assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="/assets/js/materialize.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script src="js/login.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
 	<script type="text/javascript" src="js/fb.js"></script>
+	<script type="text/javascript" src="js/gmail.js"></script>
 	<script type="text/javascript" src="/assets/js/validation.js"></script>
 </body>
 
