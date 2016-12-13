@@ -19,7 +19,9 @@
 	<div class="hero">
 		<nav>
 			<div class="nav-wrapper hide-on-large-only">
-				<a class="button-collapse" data-activates="slide-out" href='#'><img src="/assets/img/favicon.png"></a>
+				<a class="button-collapse" data-activates="slide-out" href='#'>
+					<img src="/assets/img/favicon.png">
+				</a>
 				<ul id="slide-out" class="side-nav" class="right">
 					<li>
 						<a href="index.html"><img src="/assets/img/favicon.png"></a>
@@ -31,22 +33,26 @@
 					<li><a href="#!">Descargar la aplicación</a></li>
 					<li><a href="anfitrion.html">Conviértete en anfitrión</a></li>
 					<li><a href="">Ayuda</a></li>
-					<li><a class="waves-effect" href="#modal2">Regístrate</a></li>
+					<li>
+						<a class="waves-effect" href="#modal2">Regístrate</a>
+					</li>
 					<li><a id="btn-iniciar" class="waves-effect iniciar" href="#modal1">Iniciar Sesión</a></li>
 					<li><a id="foto" href="javascript:void(0)"></a></li>
-					<li>
 						<div class="divider"></div>
 					</li>
 					<li><a href="#!">Ayuda</a></li>
 				</ul>
 			</div>
 			<div class="nav-wrapper hide-on-small-only">
-				<a class="brand-logo hide-on-med-and-down" href='#'><img src="/assets/img/favicon.png"></a>
+				<a class="brand-logo hide-on-med-and-down" href='index.html'><img src="/assets/img/favicon.png"></a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					<li><a href="anfitrion.html">Conviértete en anfitrión</a></li>
 					<li><a href="">Ayuda</a></li>
-					<li><a href="">Regístrate</a></li>
-					<li><a href="">Iniciar Sesión</a></li>
+					<li>
+						<a class="waves-effect" href="#modal2">Regístrate</a>
+					</li>
+					<li><a id="btn-iniciar" class="waves-effect iniciar" href="#modal1">Iniciar Sesión</a></li>
+					<li><a id="foto" href="javascript:void(0)"></a></li>
 				</ul>
 			</div>
 		</nav>
@@ -63,7 +69,8 @@
 	</div>
 	<div id="modal1" class="modal">
 		<div class="modal-content">
-			<div class="buttons"> <a class="btn-fb waves-effect waves-light btn">Iniciar sesión con Facebook
+			<div class="buttons"> 
+			<a id="facebook" class="btn-fb waves-effect waves-light btn">Iniciar sesión con Facebook
 			<img src="/assets/img/fb.png" alt="" class="logo-fb">
 			</a> <a class="btn-google waves-effect waves-light btn">Iniciar sesión con Google
 			<img src="/assets/img/google.png" alt="" class="logo-google">
@@ -296,6 +303,7 @@
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/fb.js"></script>
 	<script type="text/javascript" src="js/validation.js"></script>
 </body>
 

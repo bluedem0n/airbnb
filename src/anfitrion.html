@@ -15,25 +15,42 @@
 </head>
 <body>
 	<nav>
-		<div class="nav-wrapper hide-on-large-only">
-			<a href="#" class="brand-logo"><img src="/assets/img/favicon.png"></a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="anfitrion.html">Conviértete en anfitrión</a></li>
-				<li><a href="">Ayuda</a></li>
-				<li><a class="waves-effect" href="#modal2">Regístrate</a></li>
-				<li><a class="waves-effect" href="#modal1">Iniciar Sesión</a></li>
-			</ul>
-		</div>
-		<div class="nav-wrapper hide-on-small-only">
-			<a class="brand-logo hide-on-med-and-down" href='#'><img src="/assets/img/favicon.png"></a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="anfitrion.html">Conviértete en anfitrión</a></li>
-				<li><a href="">Ayuda</a></li>
-				<li><a href="">Regístrate</a></li>
-				<li><a href="">Iniciar Sesión</a></li>
-			</ul>
-		</div>
-	</nav>
+			<div class="nav-wrapper hide-on-large-only">
+				<a class="button-collapse" data-activates="slide-out" href='#'>
+					<img class="logo" src="/assets/img/favicon.png">
+				</a>
+				<ul id="slide-out" class="side-nav" class="right">
+					<li>
+						<a href="index.html"><img src="/assets/img/favicon.png"></a>
+					</li>
+					<li><a href="index.html">Inicio</a></li>
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li><a href="javascript:void(0)">Descargar la aplicación</a></li>
+					<li><a href="anfitrion.html">Conviértete en anfitrión</a></li>
+					<li><a href="javascript:void(0)">Ayuda</a></li>
+					<li>
+						<a href="javascript:void(0)">Regístrate</a>
+					</li>
+					<li><a href="javascript:void(0)">Iniciar Sesión</a></li>
+						<div class="divider"></div>
+					</li>
+					<li><a href="#!">Ayuda</a></li>
+				</ul>
+			</div>
+			<div class="nav-wrapper hide-on-small-only">
+				<a class="brand-logo hide-on-med-and-down" href='index.html'><img src="/assets/img/favicon.png"></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="anfitrion.html">Conviértete en anfitrión</a></li>
+					<li><a href="javascript:void(0)">Ayuda</a></li>
+					<li>
+						<a href="javascript:void(0)">Regístrate</a>
+					</li>
+					<li><a href="javascript:void(0)">Iniciar Sesión</a></li>
+				</ul>
+			</div>
+		</nav>
 	<section id="anfitrion">
 		<article class="img-anf valign-wrapper hide-on-small-only">
 			<div class="container valign">
@@ -108,12 +125,74 @@
 			</div>
 		</article>
 	</section>
+	<div class="divider"></div>
+	<section class="footer">
+		<div class="container">
+			<div class="row footer1">
+				<div class="col s12 m3 l3">
+					<select class="browser-default">
+						<option value="" disabled selected>Español</option>
+						<option value="1">Idioma2</option>
+						<option value="2">Idioma3</option>
+						<option value="3">Idioma4</option>
+					</select>
+					<select class="browser-default">
+						<option value="" disabled selected>PEN</option>
+						<option value="1">Moneda1</option>
+						<option value="2">Moneda2</option>
+						<option value="3">Moneda3</option>
+					</select>
+				</div>
+				<div class="col m3 l3 hide-on-small-only">
+					<p><b>Airbnb</b></p>
+					<ul>
+						<li>Acerca de</li>
+						<li>Empleo</li>
+						<li>Prensa</li>
+						<li>Políticas</li>
+						<li>Ayuda</li>
+					</ul>
+				</div>
+				<div class="col m3 l3 hide-on-small-only">
+					<p><b>Descubre Airbnb</b></p>
+					<ul>
+						<li>Confianza y seguridad</li>
+						<li>Crédito para viajar</li>
+						<li>Airbnb Action</li>
+						<li>Viajes de negocios</li>
+						<li>Guías</li>
+					</ul>
+				</div>
+				<div class="col m3 l3 hide-on-small-only">
+					<p><b>Hospedar</b></p>
+					<ul>
+						<li>Razones para hospedar</li>
+						<li>Hospitalidad</li>
+						<li>Ser un anfitrión responsable</li>
+					</ul>
+				</div>
+			</div>
+			<div class="divider"></div>
+			<div class="row footer2">
+				<div class="col s6 m6 l6">
+					<img src="/assets/img/afooter.png" width="30px">
+					<span>© Airbnb, Inc.</span>
+				</div>
+				<div class="col s6 m6 l6 right-align">
+					<span>Términos y Privacidad</span>
+					<span class="hide-on-small-only">Mapa del sitio</span>
+					<span class="hide-on-med-and-down icon-facebook"></span>
+					<span class="hide-on-med-and-down icon-twitter"></span>
+					<span class="hide-on-med-and-down icon-instagram"></span>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!--Import jQuery before materialize.js-->
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/validation.js"></script>
 </body>
 
 </html>
