@@ -1,91 +1,22 @@
 @import "variables";
-
-body{
-	font-family: $font-roboto;
-}
-
-nav{
+@import "mixins";
+nav {
 	background-color: $color-white;
 	box-shadow: none;
 	position: fixed;
 	z-index: 100;
-	img{
+	img {
 		padding: 2vh;
-	    width: 8vh;
-	    height: 8vh;
+		width: 8vh;
+		height: 8vh;
 	}
 }
 
 // hero image
-.nav-wrapper
-	a{
-		color: black;
-	}
-
-.title{
-	padding: 13vh 0vh;
-
-	h3, h5{
-		color: $color-gray-letter;
-	}
-}	
-
-.hero{
-	background: url(https://a0.muscache.com/airbnb/static/engagement/p1/large/posters_sm.jpg);
-	background-position: bottom center;
-    background-size: 1600px auto;
-    background-repeat: repeat-x;
-    left: -60px;
-    height: 90vh;
+.nav-wrapper a {
+	color: black;
 }
 
-.button1{
-	border-radius: 3vh;
-	border: $color-border solid;
-	width: 45vh;
-	padding: 1vh;
-}
-
-// buscador
-
-.formulario{
-	padding: 4vh 0vh;
-}
-
-.form{
-	border-radius: 1vh;
-	border: $color-border solid;
-	padding: 1vh;
-	margin-bottom: 0;
-	position: relative;
-	z-index: 0;
-}
-
-.btn-buscar{
-	padding-top: 4vh;
-}
-
-.search{
-	font-size: 2rem;
-	padding-top:4vh !important;
-}
-//footer
-
-.footer1, .footer2{
-	padding:5vh 0vh;
-	img{
-		vertical-align: middle;
-	}
-	span{
-		padding-left:2vh;
-	}
-}
-
-.browser-default{
-	margin-bottom: 4vh;
-}
-
-//menu
-#sidenav-overlay {
-	background-color: rgba(0,0,0,0);
+header {
+	padding-bottom: 4em;
 }

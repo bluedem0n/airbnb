@@ -1,0 +1,17 @@
+nav {
+  background-color: #FFFFFF;
+  box-shadow: none;
+  position: fixed;
+  z-index: 100; }
+  nav img {
+    padding: 2vh;
+    width: 8vh;
+    height: 8vh; }
+
+.nav-wrapper a {
+  color: black; }
+
+header {
+  padding-bottom: 4em; }
+
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,78 @@
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+.fechas,
+.type-room,
+.rango,
+.reserva-precios {
+	border-bottom: 1px solid #EDEFED;
+	padding: 0px;
+}
+
+.formu {
+	padding: 10px 0px 10px 0px;
+	margin-bottom: 0px;
+}
+
+.type {
+	background-color: #EDEFED;
+	border: 1px solid #EDEFED;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.type label {
+	height: 14px;
+}
+
+
+/*---lista de lugares ---*/
+
+.navbar-fixed {
+	padding-top: 20px;
+}
+
+.navbar-fixed .bold {
+	font-weight: bold;
+}
+
+.navbar-fixed a {
+	background-color: white;
+	color: black;
+	border: 1px solid gray;
+}
+
+.card .card-image .card-title {
+	background-color: #767676;
+	bottom: 35px;
+	opacity: 0.8;
+}
+
+.card .image-user {
+	position: absolute;
+	right: 15px;
+	bottom: 80px;
+	border: 2px solid white;
+}
+
+.card .card-content ul li {
+	display: inline-block;
+}
+
+.card .card-content ul li .material-icons {
+	color: #00a699;
+}
+
+.card .card-content .titulo {
+	color: #484848;
+	font-weight: bold;
+}
+
+.search-section {
+	position: relative;
+	top: 10vh;
+}
+
+
+/*# sourceMappingURL=search.css.map */

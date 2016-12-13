@@ -1,0 +1,11 @@
+.footer1, .footer2 {
+  padding: 5vh 0vh; }
+  .footer1 img, .footer2 img {
+    vertical-align: middle; }
+  .footer1 span, .footer2 span {
+    padding-left: 2vh; }
+
+.browser-default {
+  margin-bottom: 4vh; }
+
+/*# sourceMappingURL=footer.css.map */

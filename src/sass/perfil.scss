@@ -1,60 +1,61 @@
-	@import "variables";
-	
-	.nav-profile{
-		background-color: $color-gray;	
-	}
+@import "variables";
+nav{
+	position: absolute !important;
+}
+.perfil {
+	padding-top: 4em;
+}
 
+.nav-profile {
+	background-color: $color-gray;
+}
+
+.panel-control-none {
+	display: none;
+}
+
+@media screen and (max-width: 320px) {
 	.panel-control-none {
-		display: none;
+		display: block;
+		margin-top: -3px;
 	}
-	@media screen and (max-width: 320px) {
-  		.panel-control-none {
-    	display: block;
-    	margin-top: -3px;
-  		}
-	}
-	
-	.nav-text-profile{
-		padding-left:200px;
-		&:hover {
-        text-decoration: underline;
-        font-weight: bold;
-    	}
-	}
+}
 
-	.text-welcome-profile {
-		background-color: $color-gray-search;
-		border: 1px solid $color-border;
-		padding:15px;
-		margin-bottom: 0px;
-	}
-
-	.text-profile {
-		border: 1px solid $color-border;
-		padding:15px;
-	}
-
-	.img-profile{
-		margin-top: 14px;
-		border: 1px solid $color-border;
-	}
-
-	.name-profile{
-		font-size: 22px;
+.nav-text-profile {
+	padding-left: 200px;
+	&:hover {
+		text-decoration: underline;
 		font-weight: bold;
 	}
+}
 
-	.btn-profile {
-		margin-bottom: 16px;
-		background-color:$color-pink;
-	}
+.text-welcome-profile {
+	background-color: $color-gray-search;
+	border: 1px solid $color-border;
+	padding: 15px;
+	margin-bottom: 0px;
+}
 
-	@media screen and (max-width: 320px) {
-  		.btn-profile {
+.text-profile {
+	border: 1px solid $color-border;
+	padding: 15px;
+}
 
-  		}
-	}
+.img-profile {
+	margin-top: 14px;
+	border: 1px solid $color-border;
+}
 
+.name-profile {
+	font-size: 22px;
+	font-weight: bold;
+}
 
+.btn-profile {
+	margin-bottom: 16px;
+	background-color: $color-pink;
+}
 
-
+@media screen and (max-width: 320px) {
+	.btn-profile {}
+}

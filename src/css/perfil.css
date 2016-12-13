@@ -1,3 +1,9 @@
+nav {
+  position: absolute !important; }
+
+.perfil {
+  padding-top: 4em; }
+
 .nav-profile {
   background-color: #767676; }
 
