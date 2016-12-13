@@ -14,7 +14,6 @@
 	<link rel="stylesheet" href="css/footer.css">
 	<title>Airbnb</title>
 </head>
-
 <body>
 	<header>
 		<nav>
@@ -34,7 +33,6 @@
 					<li> <a href="javascript:void(0)">Regístrate</a> </li>
 					<li><a href="javascript:void(0)">Iniciar Sesión</a></li>
 					<div class="divider"></div>
-					</li>
 					<li><a href="#!">Ayuda</a></li>
 				</ul>
 			</div>
@@ -71,8 +69,9 @@
 	<div class="container">
 		<div class="row perfil">
 			<div class="col m4 col s12">
-				<div class="center-align img-profile"> <img class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Usuaria_Wotancito.jpg/220px-Usuaria_Wotancito.jpg">
-					<p class="name-profile">María</p>
+				<div class="center-align img-profile">
+				 <div id="foto" class="responsive-img"></div> 
+				 	<span id="nombre" class="name-profile" ></span>  
 					<p><a href="">View Profile</a></p> <a class="btn btn-profile">Complete Profile</a> </div>
 				<div>
 					<p class="text-welcome-profile">Verified info</p>
@@ -99,7 +98,7 @@
 			</div>
 			<div class="col m8 col s12">
 				<div>
-					<p class="text-welcome-profile">Welcome to Airbnb, María!</p>
+					<p class="text-welcome-profile">Welcome to Airbnb, <span id="name"></span>!</p>
 					<div class="text-profile">
 						<p>Check your messages, view upcoming trip information, and find travel inspiration all from your dashboard. Before booking your first stay, make sure to:</p>
 						<p><a href="">Complete Your Profile</a></p>
@@ -183,6 +182,7 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="/assets/js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/fb.js"></script>
 </body>
 
 </html>
