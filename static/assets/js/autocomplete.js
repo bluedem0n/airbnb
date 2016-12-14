@@ -15,7 +15,7 @@ var componentForm = {
 function initialize() {
   // Cree el objeto de autocompletado, restringiendo la búsqueda
   autocomplete = new google.maps.places.Autocomplete(
-     (document.getElementById('first_name')),
+     (document.getElementById('autocomplete')),
       { types: ['geocode'] });
   // Cuando el usuario selecciona una dirección en el menú desplegable,
   // rellena los campos de dirección en el formulario.

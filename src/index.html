@@ -2,16 +2,12 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!--Import Google Icon Font-->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Import materialize.css-->
 	<link type="text/css" rel="stylesheet" href="/assets/css/materialize.min.css" media="screen,projection" />
-	<!--Let browser know website is optimized for mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<meta name="description" content="Google Address Autocomplete API, google search autocomplete api, google jquery autocomplete, google places autocomplete jquery, google maps autocomplete tutorial, google autofill api">
-	<meta name="keywords" content="Google Address Autocomplete API, google search autocomplete api, google jquery autocomplete, google places autocomplete jquery, google maps autocomplete tutorial, google autofill api">
-	<meta name="author" content="https://plus.google.com/+MuniAyothi/">
 
 	<link rel="icon" href="/assets/img/favicon.png" type="image/x-icon" />
 	<link rel="stylesheet" href="css/style.css">
@@ -139,13 +135,13 @@
 			</div>
 		</div>
 	</div>
-	<section class="formulario ">
+	<section class="formulario" onload="initialize()">
 		<div class="container">
 			<div class="row form hide-on-small-only">
 				<div class="col m3 l3">
 					<div class="input-field">
-						<input placeholder="Destino, ciudad, dirección" id="first_name" onFocus="geolocate()" type="text" class="validate">
-						<label for="first_name">Dónde</label>
+						<input placeholder="Destino, ciudad, dirección" id="autocomplete" class="validate" onFocus="geolocate()" type="text">
+						<label for="autocomplete">Dónde</label>
 					</div>
 				</div>
 				<div class="col m2 l2">
@@ -251,8 +247,8 @@
 		</div>
 	</section>
 	<!--Import jQuery before materialize.js-->
-	<script src="/assets/js/jquery.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+	<script src="/assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="/assets/js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
