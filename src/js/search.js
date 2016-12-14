@@ -29,8 +29,11 @@ var mostrarMapa = function (position) {
 	var input = document.getElementById("search");
 
 	var autocomplete = new google.maps.places.Autocomplete(input);
+
 	autocomplete.bindTo('bounds', map);
+
 	var infowindow = new google.maps.InfoWindow();
+
 	var marker = new google.maps.Marker({
 		map: map,
 		anchorPoint: new google.maps.Point(0, -29)
@@ -69,10 +72,50 @@ var mostrarMapa = function (position) {
 		});
 		marker.setVisible(true);
 
-		infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
-			'Place ID: ' + place.place_id + '<br>' +
-			place.formatted_address);
-		infowindow.open(map, marker);
+		var contentString = '<img src="{{image}}" width="300px" height="150px">' +
+			'<i class="heart-search material-icons"></i>' +
+			'<a href="" target="_blank">' +
+			'<p class="black-text"><strong class="blue-text">New: </strong>{{phrase}}</p></a>' +
+			'<div>{{address}}' +
+			'<div class="cnt-general-starts">' +
+			'<i class="xtra-small color-green material-icons">&#xE838;</i>' +
+			'<i class="xtra-small color-green material-icons">&#xE838;</i>' +
+			'<i class="xtra-small color-green material-icons">&#xE838;</i>' +
+			'<i class="xtra-small color-green material-icons">&#xE839;</i>' +
+			'<i class="xtra-small material-icons">&#xE83A;</i>' +
+			'</div>' +
+			'</div>';
+
+		var maxImages = 9;
+		var inputBuscar = $('#search').val();
+		$.when(
+			$.ajax({
+				url: "/places?lugar=" + inputBuscar,
+				type: "GET"
+			}),
+			$.ajax({
+				url: 'https://randomuser.me/api?inc=picture&results=' + maxImages,
+				dataType: 'json',
+				type: "GET"
+			})
+		).then(function (lugares, data) {
+			$.each(lugares[0], function (i, plac) {
+				largo = lugares[0].length;
+				console.log(largo);
+				var contentStringResultado = contentString.replace("{{phrase}}", plac.phrase)
+					.replace("{{address}}", plac.address)
+					.replace("{{phone}}", plac.contact.phone)
+					.replace("{{image}}", data[0].results[i % maxImages].picture.large);
+
+				infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+					contentStringResultado + '<br>' +
+					place.formatted_address);
+
+				infowindow.open(map, marker);
+			});
+		});
+
+
 	});
 }
 

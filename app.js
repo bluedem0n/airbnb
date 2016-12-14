@@ -9,7 +9,7 @@ var distritos = ['Lima', 'Ate', 'Barranco', 'Breña', 'Comas', 'Chorrillos', 'El
   'San Borja', 'Villa El Savador', 'Santa Anita', 'Callao', 'Bellavista', 'Carmen de la Legua', 'La Perla', 'La Punta', 'Ventanilla'];
 var precios = [46, 52, 93, 67, 121, 211];
 var evaluaciones = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-var tipo = ["Departamento", "Casa", "Habitación"];
+var tipo = ["Departamento", "Casa entera", "Habitación privada", "Habitación compartida"];
 var titulo = ["Habitación con vista al mar", "Habitación entrada independiente"];
 
 dream.customType('pi', function () {
@@ -32,8 +32,7 @@ dream.customType('titulo', function (helper) {
 })
 
 
-var lugares = dream
-  .schema({
+var lugares = dream.schema({
   	titulo: 'titulo',
     distrito: 'distrito',
     precio: 'precio',
@@ -44,9 +43,9 @@ var lugares = dream
     },
     pi: 'pi',
     hello: 'hello'
-  })
-  .generateRnd(100)
-  .output();
+})
+	.generateRnd(100)
+	.output();
   
 app.get('/lugares', function (req, res) {
     var lugar = req.query.lugar;
