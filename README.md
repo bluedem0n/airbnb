@@ -6,7 +6,7 @@
 
 . 1 OBJETIVO
 
-Ser una página dinámica y responsive que te permita encontrar y elegir a traves de una lista perfecta de lugares para alojarte cuando te encuentres de viaje y/o simplemente busques descansar. 
+Ser una página dinámica y responsive que te permita encontrar y elegir a través de una lista de lugares para alojarte cuando te encuentres de viaje y/o simplemente busques descansar. 
 
 
 . 2 USUARIO (TARGET)
@@ -16,7 +16,7 @@ Personas que esten en busca de alojamiento.
 
 . 3 PLANEACIÓN Y DESARROLLO
 
-El trabajo de la web se trabajo por medio de varias prácticas (pair programming, product backlog) de metodologías y frameworks ágiles como Scrum y Kanban.
+El trabajo de la web se trabajo por medio de varias prácticas (pair programming, product backlog), metodologías y frameworks ágiles como Scrum y Kanban.
 
 * Slack
 ![slack](http://2.1m.yt/EjETkuF.jpg)
