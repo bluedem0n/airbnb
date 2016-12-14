@@ -142,6 +142,7 @@
 						<input placeholder="Destino, ciudad, dirección" id="first_name" type="text" class="validate">
 						<label for="first_name">Dónde</label>
 					</div>
+					<div id="map" class="ocultar"></div>
 				</div>
 				<div class="col m2 l2">
 					<label for="first_name">Llegada</label>
@@ -160,13 +161,16 @@
 				</div>
 				<div class="col m2 l2">
 					<div class="btn-buscar hide-on-large-only"> <a class="waves-effect waves-light btn red lighten-1"><span class="icon-search2"></span></a> </div>
-					<div class="btn-buscar hide-on-med-only"> <a href="search.html" class="waves-effect waves-light btn red lighten-1">Buscar</a> </div>
+					<div class="btn-buscar hide-on-med-only"> 
+					<a id="btn-buscar" href="search.html" class="waves-effect waves-light btn red lighten-1">Buscar</a> 
+					</div>
 				</div>
 			</div>
 			<div class="row form hide-on-med-and-up">
 				<div class="col s10">
 					<div class="input-field">
-						<input placeholder="Buscar" id="first_name" type="text" class="validate"> </div>
+						<input id="search" type="search" placeholder="Buscar" class="search" required>
+					</div>
 				</div>
 				<div class="col s2 search"> <span class="icon-search"></span> </div>
 			</div>
@@ -245,13 +249,14 @@
 			</div>
 		</div>
 	</section>
-	<!--Import jQuery before materialize.js-->
-	<script src="/assets/js/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5rRnVablF5j-hVnTp1-d6gz9Zu6_Y-Zk&libraries=places" async defer></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="/assets/js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-<!--	<script type="text/javascript" src="js/login.js"></script>
-	<script type="text/javascript" src="js/fb.js"></script>-->
+	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/fb.js"></script>
 	<script type="text/javascript" src="/assets/js/validation.js"></script>
 </body>
 
