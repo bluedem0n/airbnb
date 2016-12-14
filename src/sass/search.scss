@@ -1,68 +1,136 @@
 @import "variables";
-
-body{
+body {
 	font-family: $font-roboto;
 }
-.fechas,.type-room, .rango,.reserva-precios{
+
+.fechas,
+.type-room,
+.rango,
+.reserva-precios {
 	border-bottom: 1px solid #EDEFED;
-    padding: 0px;
-    
+	padding: 0px;
 }
-.formu{
+
+.formu {
 	padding: 10px 0px 10px 0px;
-	margin-bottom:0px;
+	margin-bottom: 0px;
 }
-.type-room{
 
-}
-.type
-{
-	background-color:$color-gray-search;
+.type-room {}
+
+.type {
+	background-color: $color-gray-search;
 	border: 1px solid $color-gray-search;
-    padding: 8px;
-    border-radius: 5px;
-
-	label{
-		height:14px;
+	padding: 8px;
+	border-radius: 5px;
+	label {
+		height: 14px;
 	}
 }
+
+
 /*---lista de lugares ---*/
-.navbar-fixed{
-	padding-top:20px;
-	.bold{
+
+.navbar-fixed {
+	.bold {
 		font-weight: bold;
 	}
-	a{
+	a {
 		background-color: white;
-    	color: black;
-    	border: 1px solid gray;
+		color: black;
 	}
 }
+
 .card {
 	.card-image {
 		.card-title {
-			background-color:$color-gray;
-			bottom:35px;
-			opacity:0.8;
+			background-color: $color-gray;
+			bottom: 35px;
+			opacity: 0.8;
 		}
-	}	
-	.image-user{
-		    position: absolute;
-		    right: 15px;
-		    bottom: 80px;
-		    border: 2px solid white;
 	}
-	.card-content{
-		ul li{
+	.image-user {
+		position: absolute;
+		right: 15px;
+		bottom: 80px;
+		border: 2px solid white;
+	}
+	.card-content {
+		ul li {
 			display: inline-block;
-			.material-icons{
+			.material-icons {
 				color: $color-green;
 			}
-		}	
-		.titulo{
-		color: #484848;
-	    font-weight: bold;
+		}
+		.titulo {
+			color: #484848;
+			font-weight: bold;
 		}
 	}
-	
 }
+
+
+/* HEADER */
+
+#cabecera {
+	height: 5%;
+}
+
+nav {
+	background-color: #fff;
+	.input-field {
+		label i {
+			color: #5E4848;
+		}
+		input {
+			height: 58%;
+			font-size: 1.2rem;
+			border: none;
+			padding-left: 2rem;
+		}
+	}
+}
+
+.navbar-search {
+	width: 40rem;
+	margin-left: 4em;
+}
+
+.nav-wrapper > ul > li > a {
+	color: #5E4848;
+}
+
+.logo {
+	margin-left: 0.6rem;
+	margin-top: 0.4rem;
+	margin-right: 0.6rem;
+}
+
+.input-border,
+input[type=text] {
+	border: 1px solid #AAAAAA !important;
+	height: 2.3rem;
+	border-radius: 2px;
+}
+
+.last_name {
+	color: #2E2E2E;
+	font-size: 0.9rem;
+}
+
+i {
+	cursor: pointer;
+	.small {
+		font-size: 1rem;
+	}
+}
+
+#map  {
+    width: 100%;
+    height: 50em;
+}
+
+/* {
+	position: relative;
+    overflow: hidden;
+}*/

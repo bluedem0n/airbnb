@@ -12,11 +12,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="icon" href="/assets/img/favicon.png" type="image/x-icon" />
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/search.css">
+	<link rel="stylesheet" href="sass/search.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/header.css">
 	<title>Búsqueda en Airbnb</title>
 </head>
+
 <body>
 	<nav>
 		<div class="nav-wrapper hide-on-large-only">
@@ -39,27 +40,35 @@
 				<li><a href="#!">Ayuda</a></li>
 			</ul>
 		</div>
-		<div class="nav-wrapper hide-on-small-only">
-			<a class="brand-logo hide-on-med-and-down" href='index.html'><img class="logo"src="/assets/img/favicon.png"></a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="anfitrion.html">Conviértete en anfitrión</a></li>
-				<li><a href="">Ayuda</a></li>
-				<li><a href="">Regístrate</a></li>
-				<li><a href="">Iniciar Sesión</a></li>
-			</ul>
+		<div class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper">
+					<a class="brand-logo hide-on-med-and-down" href='index.html'><img class="logo" src="/assets/img/favicon.png"></a>
+					<nav class="navbar-search">
+						<div class="nav-wrapper">
+							<form>
+								<div class="input-field">
+									<input id="search" type="search" placeholder="Buscar" class="search" required>
+									<label for="search" class="search1"><i class="material-icons">search</i></label>
+								</div>
+							</form>
+						</div>
+					</nav>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="anfitrion.html">Conviértete en anfitrión</a></li>
+						<li><a href="">Ayuda</a></li>
+						<li><a href="">Regístrate</a></li>
+						<li><a href="">Iniciar Sesión</a></li>
+					</ul>
+				</div>
+			</nav>
 		</div>
 		<div class="divider"></div>
 	</nav>
-
 	<section class="search-section">
 		<div class="row">
 			<div class="col s12 m7 l7">
 				<div class="fechas">
-					<div class="row">
-						<div class="input-field col s12">
-				          <textarea id="textarea1" class="materialize-textarea" placeholder="Buscar"></textarea>
-				        </div>
-					</div>
 					<div class="row formu">
 						<div class="col l2">
 							<div class="">
@@ -176,153 +185,154 @@
 					</div>
 				</div>
 				<div class="lista-lugares">
-                    <div class="row">
-                        <div class="col s12 m12 l6">
-                            <div class="card">
-                                <div class="card-image">
-                                  <img src="/assets/img/img-2.jpg">
-                                  <span class=" card-title precio">s/. 242</span>                               
-                                </div>
-                                <div class="col s2">
-                                        <img src="/assets/img/user-1.jpg" alt="" class="circle responsive-img image-user">
-                                </div>
-                                <div class="card-content">
-                                  <p><a class="titulo" href="#">Modern & New Apartment</a></p>
-                                  <ul>
-                                    <li>Casa/apto.entero</li>
-                                    <li>*4 huespedes</li>
-                                    <li>*2 evaluaciones</li>
-                                  </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m12 l6">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="/assets/img/img-1.jpg">
-                                    <span class=" card-title precio">s/. 242</span>
-                                </div>
-                                <div class="col s2">
-                                    <img src="/assets/img/user-2.jpg" alt="" class="circle responsive-img image-user">
-                                </div>
-                                <div class="card-content">
-                                  <p><a class="titulo" href="#">Modern & New Apartment</a></p>
-                                  <ul>
-                                    <li>Casa/apto.entero</li>
-                                    <li>*4 huespedes</li>
-                                    <li>*<i class="tiny material-icons">star</i>
-                                        <i class="tiny material-icons">star</i>
-                                        <i class="tiny material-icons">star</i>
-                                        <i class="tiny material-icons">star</i>
-                                    </li>
-                                    <li>*42</li>
-                                  </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                    
-                    <div class="row">
-                        <div class="col s12 m12 l6">
-                            <div class="card">
-                                <div class="card-image">
-                                  <img src="/assets/img/img-2.jpg">
-                                  <span class=" card-title precio">s/. 242</span>
-                                </div>
-                                <div class="col s2">
-                                        <img src="/assets/img/user-1.jpg" alt="" class="circle responsive-img image-user">
-                                </div>
-                                <div class="card-content">
-                                  <p><a class="titulo" href="#">Modern & New Apartment</a></p>
-                                  <ul>
-                                    <li>Casa/apto.entero</li>
-                                    <li>*4 huespedes</li>
-                                    <li>*2 evaluaciones</li>
-                                  </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m12 l6">
-                            <div class="card">
-                                <div class="card-image">
-                                  <img src="/assets/img/img-1.jpg">
-                                  <span class=" card-title precio">s/. 242</span>
-                                </div>
-                                <div class="col s2">
-                                    <img src="/assets/img/user-2.jpg" alt="" class="circle responsive-img image-user">
-                                </div>
-                                <div class="card-content">
-                                    <p><a class="titulo" href="#">Modern & New Apartment</a></p>
-                                    <ul>
-                                        <li>Casa/apto.entero</li>
-                                        <li>*4 huespedes</li>
-                                        <li>*<i class="tiny material-icons">star</i>
-                                            <i class="tiny material-icons">star</i>
-                                            <i class="tiny material-icons">star</i>
-                                            <i class="tiny material-icons">star</i>
-                                        </li>
-                                        <li>*42</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12 m12 l6">
-                            <div class="card">
-                                <div class="card-image">
-                                  <img src="/assets/img/img-2.jpg">
-                                  <span class=" card-title precio">s/. 242</span>
-                                </div>
-                                <div class="col s2">
-                                        <img src="/assets/img/user-1.jpg" alt="" class="circle responsive-img image-user">
-                                </div>
-                                <div class="card-content">
-                                  <p><a class="titulo" href="#">Modern & New Apartment</a></p>
-                                  <ul>
-                                    <li>Casa/apto.entero</li>
-                                    <li>*4 huespedes</li>
-                                    <li>*2 evaluaciones</li>
-                                  </ul>
-                                </div>
-                           
-                              </div>
-                        </div>
-                        <div class="col s12 m12 l6">
-                            <div class="card">
-                                <div class="card-image">
-                                  <img src="/assets/img/img-1.jpg">
-                                  <span class=" card-title precio">s/. 242</span>
-                                </div>
-                                <div class="col s2">
-                                    <img src="/assets/img/user-2.jpg" alt="" class="circle responsive-img image-user">
-                                </div>
-                                <div class="card-content">
-                                  <p><a class="titulo" href="#">Modern & New Apartment</a></p>
-                                  <ul>
-                                    <li>Casa/apto.entero</li>
-                                    <li>*4 huespedes</li>                                    
-                                    <li>*<i class="tiny material-icons">star</i>
-                                        <i class="tiny material-icons">star</i>
-                                        <i class="tiny material-icons">star</i>
-                                        <i class="tiny material-icons">star</i>
-                                    </li>
-                                    <li>*42</li>
-                                  </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+					<div class="row">
+						<div class="col s12 m12 l6">
+							<div class="card">
+								<div class="card-image">
+									<img src="/assets/img/img-2.jpg">
+									<span class=" card-title precio">s/. 242</span>
+								</div>
+								<div class="col s2">
+									<img src="/assets/img/user-1.jpg" alt="" class="circle responsive-img image-user">
+								</div>
+								<div class="card-content">
+									<p><a class="titulo" href="#">Modern & New Apartment</a></p>
+									<ul>
+										<li>Casa/apto.entero</li>
+										<li>*4 huespedes</li>
+										<li>*2 evaluaciones</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col s12 m12 l6">
+							<div class="card">
+								<div class="card-image">
+									<img src="/assets/img/img-1.jpg">
+									<span class=" card-title precio">s/. 242</span>
+								</div>
+								<div class="col s2">
+									<img src="/assets/img/user-2.jpg" alt="" class="circle responsive-img image-user">
+								</div>
+								<div class="card-content">
+									<p><a class="titulo" href="#">Modern & New Apartment</a></p>
+									<ul>
+										<li>Casa/apto.entero</li>
+										<li>*4 huespedes</li>
+										<li>*<i class="tiny material-icons">star</i>
+											<i class="tiny material-icons">star</i>
+											<i class="tiny material-icons">star</i>
+											<i class="tiny material-icons">star</i>
+										</li>
+										<li>*42</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m12 l6">
+							<div class="card">
+								<div class="card-image">
+									<img src="/assets/img/img-2.jpg">
+									<span class=" card-title precio">s/. 242</span>
+								</div>
+								<div class="col s2">
+									<img src="/assets/img/user-1.jpg" alt="" class="circle responsive-img image-user">
+								</div>
+								<div class="card-content">
+									<p><a class="titulo" href="#">Modern & New Apartment</a></p>
+									<ul>
+										<li>Casa/apto.entero</li>
+										<li>*4 huespedes</li>
+										<li>*2 evaluaciones</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col s12 m12 l6">
+							<div class="card">
+								<div class="card-image">
+									<img src="/assets/img/img-1.jpg">
+									<span class=" card-title precio">s/. 242</span>
+								</div>
+								<div class="col s2">
+									<img src="/assets/img/user-2.jpg" alt="" class="circle responsive-img image-user">
+								</div>
+								<div class="card-content">
+									<p><a class="titulo" href="#">Modern & New Apartment</a></p>
+									<ul>
+										<li>Casa/apto.entero</li>
+										<li>*4 huespedes</li>
+										<li>*<i class="tiny material-icons">star</i>
+											<i class="tiny material-icons">star</i>
+											<i class="tiny material-icons">star</i>
+											<i class="tiny material-icons">star</i>
+										</li>
+										<li>*42</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m12 l6">
+							<div class="card">
+								<div class="card-image">
+									<img src="/assets/img/img-2.jpg">
+									<span class=" card-title precio">s/. 242</span>
+								</div>
+								<div class="col s2">
+									<img src="/assets/img/user-1.jpg" alt="" class="circle responsive-img image-user">
+								</div>
+								<div class="card-content">
+									<p><a class="titulo" href="#">Modern & New Apartment</a></p>
+									<ul>
+										<li>Casa/apto.entero</li>
+										<li>*4 huespedes</li>
+										<li>*2 evaluaciones</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+						<div class="col s12 m12 l6">
+							<div class="card">
+								<div class="card-image">
+									<img src="/assets/img/img-1.jpg">
+									<span class=" card-title precio">s/. 242</span>
+								</div>
+								<div class="col s2">
+									<img src="/assets/img/user-2.jpg" alt="" class="circle responsive-img image-user">
+								</div>
+								<div class="card-content">
+									<p><a class="titulo" href="#">Modern & New Apartment</a></p>
+									<ul>
+										<li>Casa/apto.entero</li>
+										<li>*4 huespedes</li>
+										<li>*<i class="tiny material-icons">star</i>
+											<i class="tiny material-icons">star</i>
+											<i class="tiny material-icons">star</i>
+											<i class="tiny material-icons">star</i>
+										</li>
+										<li>*42</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="col m5 l5">
-				<div class="Mapa"></div>
+				<div id="map"></div>
 			</div>
 		</div>
 	</section>
 	<!--Import jQuery before materialize.js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5rRnVablF5j-hVnTp1-d6gz9Zu6_Y-Zk&libraries=places" async defer></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/assets/js/materialize.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
 </body>
 
 </html>
