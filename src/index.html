@@ -18,7 +18,7 @@
 	<title>Airbnb</title>
 </head>
 
-<body>
+<body onload="initialize()">
 	<div class="hero">
 		<nav>
 			<div class="nav-wrapper hide-on-large-only">
@@ -135,12 +135,12 @@
 			</div>
 		</div>
 	</div>
-	<section class="formulario" onload="initialize()">
+	<section class="formulario">
 		<div class="container">
 			<div class="row form hide-on-small-only">
 				<div class="col m3 l3">
 					<div class="input-field">
-						<input placeholder="Destino, ciudad, dirección" id="autocomplete" class="validate" onFocus="geolocate()" type="text">
+						<input placeholder="Destino, ciudad, dirección" id="autocomplete" class="validate" onload="geolocate()" type="text">
 						<label for="autocomplete">Dónde</label>
 					</div>
 				</div>
