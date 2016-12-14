@@ -8,6 +8,7 @@
   "author": "Mugiwaras - Laboratoria2016",
   "license": "MIT",
   "dependencies": {
+    "dreamjs": "^0.1.7",
     "express": "~4.14.0"
   },
   "devDependencies": {
