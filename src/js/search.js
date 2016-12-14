@@ -26,7 +26,7 @@ var mostrarMapa = function (position) {
 	var map = new google.maps.Map(document.getElementById("map"), myOptions);
 
 	//*autocomplete*//
-	var input = document.getElementById("search");
+	var input = document.getElementById("searchLugar");
 
 	var autocomplete = new google.maps.places.Autocomplete(input);
 
@@ -87,7 +87,7 @@ var mostrarMapa = function (position) {
 			'</div>';
 
 		var maxImages = 9;
-		var inputBuscar = $('#search').val();
+		var inputBuscar = $('#searchLugar').val();
 		$.when(
 			$.ajax({
 				url: "/places?lugar=" + inputBuscar,

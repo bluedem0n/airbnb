@@ -12,9 +12,19 @@ var evaluaciones = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 var tipo = ["Departamento", "Casa entera", "Habitación privada", "Habitación compartida"];
 var titulo = ["Habitación con vista al mar", "Habitación entrada independiente"];
 
+
+
 dream.customType('pi', function () {
 	return Math.PI;
 });
+dream.customType('imagen', function(helper){
+  return 'https://randomuser.me/api/portraits/med/' + helper.oneOf(genero) + '/' + helper.oneOf(numero) + '.jpg' ;
+});
+
+dream.customType('FiveWordsSentence', function (helper) {
+  return helper.chance.sentence({words: 5});
+});
+
 dream.customType('distrito', function (helper) {
 	return helper.oneOf(distritos);
 });
@@ -58,6 +68,41 @@ app.get('/lugares', function (req, res) {
     }
     res.send(lugaresFiltrados);
 })
+
+var genero = ['women', 'men'];
+var numero = [];
+for (var i = 0; i <= 99; i++) {
+    numero.push(i);
+}
+
+var lugares = dream
+  .schema({
+    phrase: 'FiveWordsSentence',
+    imagen: 'imagen',
+    address: 'address',
+    contact: {
+      phone: 'phone',
+      servicePhone: /^(800[1-9]{6})$/
+    },
+    foo: function () {
+      return 'bar';
+    },
+    pi: 'pi',
+    hello: 'hello'
+  })
+  .generateRnd(100)
+  .output();
+  
+app.get('/places', function (req, res) {
+    var lugar = req.query.lugar;
+    var lugaresFiltrados = [];
+    for (var i = 0; i < lugares.length; i++) { //lugares = > dream shema
+        var plac = lugares[i]; //lugares = > dream shema
+            lugaresFiltrados.push(plac);      
+    }
+    res.send(lugaresFiltrados);
+})
+
 
 app.set("port",(process.env.PORT || 3000));
 app.use(express.static(__dirname + "/src"));
