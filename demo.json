@@ -1,0 +1,28 @@
+{
+	"lugar":[
+		{
+			"precio": 40,
+			"descripcion":{
+				"titulo": "Departamento de estreno",
+				"opciones":{
+					"superHost": "True o False"
+				},
+			"tamaño":{
+				"habitaciones": 1,
+				"baños": 1,
+				"camas": 1
+			},
+			"servicios":{
+				"internetInalambrico": "true o false",
+				"tv": "true o false",
+				"cocina" : []
+			},
+			"normas": {
+				"mascotas": "true o false",
+				"eventos": "true o false",
+				"fumadores": "true o false"
+			},
+			"vecindario": "bla bla bla"
+		}
+	]
+}
